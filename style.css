@@ -7,15 +7,20 @@ body{
 .navbar {
     backdrop-filter: blur(8px); 
     background-color: hsla(0, 0%, 100%, 0.04); 
-    z-index: 0 !important;
   }
 .horizontal-line{
     position: absolute;
-    width: 545px !important;
+    width: 502px !important;
     height: 0.1mm;
     background-color: #97979759;
-    left: 138px;
-    z-index: 99 !important;
+    left: 158px;
+}
+.horizontal-line-two{
+    position: absolute;
+    width: 25px !important;
+    height: 0.1mm;
+    background-color: #97979759;
+    left: 0px;
 }
 .navbar-brand{
 color: white !important;
@@ -81,6 +86,5 @@ font-family: 'Barlow Condensed', sans-serif;
     width: 400px;
     font-size: 15px;
 }
-
  }
 
