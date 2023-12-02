@@ -1,16 +1,9 @@
-body{
-    background-image: url(assets/home/background-home-desktop.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+.navbar{
+    padding: 10px !important;
 }
-
-.navbar {
-    backdrop-filter: blur(8px); 
-    background-color: hsla(0, 0%, 100%, 0.04); 
-  }
 .horizontal-line{
     position: absolute;
-    width: 502px !important;
+    width: 600px !important;
     height: 0.1mm;
     background-color: #97979759;
     left: 158px;
@@ -20,7 +13,8 @@ body{
     width: 25px !important;
     height: 0.1mm;
     background-color: #97979759;
-    left: 0px;
+    top: 52px;
+    left: 0px
 }
 .navbar-brand{
 color: white !important;
@@ -34,6 +28,12 @@ font-family: 'Barlow Condensed', sans-serif;
     display: flex;
     justify-content: space-evenly;
     margin: 10px !important;
+}
+.textContainerColor{
+    backdrop-filter: blur(8px); 
+    background-color: hsla(0, 0%, 100%, 0.04); 
+    padding: 10px;
+    z-index: 99px;
 }
 .shared-logo{
     display: flex;
@@ -49,42 +49,201 @@ font-family: 'Barlow Condensed', sans-serif;
     font-weight: 100px !important;
 }
 .explore{
-    float: right;
-    margin-right: 187px;
-    margin-top: 317px;
+    display: flex;
+    justify-content: space-evenly;
 }
 .exploreButon{
-    width: 200px;
-    height: 200px;
-    border-radius: 98px;
+    width: 274px;
+    height: 274px;
+    border-radius: 150px;
     border-color: white;
-    font-size: 28px;
+    font-size: 32px;
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: bolder;
 }
+.exploreContent{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-between;
+    align-items: end;
+}
+
 .space{
     color: white;
     margin-left: 55px;
     margin-top: 176px;
+    text-align: center;
+    width: 400px;
+
+}
+.p1{
+    font-size: 28px; 
+    height: 5px;
+    letter-spacing: 2px;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #D0D6F9;
+}
+.p2{
+    font-size: 150px;
+    height: 181px;
+    letter-spacing: 2px;
+    font-family: 'Bellefair', serif;
+}
+.p3{
+    font-size: 16px; 
+    font-family: 'Barlow', sans-serif;
+    color: #D0D6F9;
+    letter-spacing: 2px;
 }
 
-@media (min-width: 1200px) and (max-width: 1500px) { 
+/* .hamburger-menu{
+    visibility: hidden;
+}
+.close-hamburger-menu{
+    visibility: hidden;
+} */
+/* Desktop view  */
+@media (min-width: 992px) and (max-width: 1600px) { 
+    body{
+        background-image: url(assets/home/background-home-desktop.jpg);
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+    }
+    .exploreButon{
+        width: 242px;
+        height: 242px;
+    }    
+
+}
+
+@media (min-width: 768px) and (max-width: 992px) { 
+    body{
+        background-image: url(assets/home/background-home-desktop.jpg);
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+    }
+    .exploreButon{
+        width: 242px;
+        height: 242px;
+    }  
+    .explore{
+        margin-right: 20px;
+    }
+    .exploreContent{
+        margin: 0px !important;
+    }
+    .exploreButon{
+        margin-right: -347px;
+    }
+  
+}
+/* Tablet view */
+@media (min-width: 535px) and (max-width: 768px) {
+    body{
+        background-image: url(assets/home/background-home-tablet.jpg);
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+    }
+    .horizontal-line{
+        visibility: hidden;
+    }
+    .horizontal-line-two{
+        visibility: hidden;
+    }
+    .space{
+        margin-left: 0px !important;  
+    }
+    .exploreButon{
+        width: 242px;
+        height: 242px;
+    } 
+   
+    .explore{
+        margin-top: 162px !important;
+        margin-right: 0px !important;
+        
+    }  
+    .exploreContent{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+ 
     .p1{
-        font-size: 28px; height: 5px; letter-spacing: 2px;font-family: 'Barlow Condensed', sans-serif;
+        font-size: 20px; 
+    }
+}
+
+
+
+@media (min-width: 50px) and (max-width: 535px) {
+    body{
+        background-image: url(assets/home/background-home-mobile.jpg);
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+    }
+    .navbar{
+        visibility: hidden;
+    }
+    .horizontal-line{
+        visibility: hidden;
+    }
+    .horizontal-line-two{
+        visibility: hidden;
+    }
+    .space{
+        margin-left: 0px !important;  
+        margin-top: 0px !important;
+    }
+    .tP{
+        margin-top: 0px !important;
+    }
+    .exploreButon{
+        width: 150px;
+        height: 150px;
+    } 
+   
+    .explore{
+        margin-top: 162px !important;
+        margin-right: 0px !important;
+        
+    }  
+    .exploreContent{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+    .p1{
+        font-size: 16px; 
+        height: 5px;
+        letter-spacing: 2px;
+        font-family: 'Barlow Condensed', sans-serif;
+        color: #D0D6F9;
     }
     .p2{
-        font-size: 135px;height: 181px;letter-spacing: 2px;font-family: 'Bellefair', serif;
+        font-size: 80px;
+        height: 100px;
+        letter-spacing: 2px;
+        font-family: 'Bellefair', serif;
     }
     .p3{
-        font-size: 15px; font-family: 'Barlow', sans-serif;
+        font-size: 15px; 
+        font-family: 'Barlow', sans-serif;
+        color: #D0D6F9;
+        letter-spacing: 2px;
+    }
+    .hamburger-menu{
+        visibility: visible !important; 
+        margin-left: 167px;
+        margin-top: -91px;
+    } 
+    .sharedLogo{
+        width: 40px;
+        height: 40px;
     }
 }
-
-
-@media (min-width: 768px) and (max-width: 1200px) { 
-.space{
-    width: 400px;
-    font-size: 15px;
-}
- }
-
