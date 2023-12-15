@@ -120,7 +120,7 @@ font-family: 'Barlow Condensed', sans-serif;
     margin-right: 151px;
 }
 .commanderImg{
-    margin-left: 140px;
+    margin-left: 40px;
     /* margin-bottom: 130px; */
 }
 .commanderImg2{
@@ -609,7 +609,104 @@ margin-bottom: 20px;
         background-size: cover !important;
     }
 }
+@media (min-width: 765px) and (max-width: 992px) { 
+    #crew{
+        background-image: url(assets/crew/background-crew-desktop.jpg);
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+    }
+    .sidenav{
+        visibility: hidden;
+    }
+   .commanderText{
+    margin: 0px !important;
+   }
+}
 
+/* Tablet view  */
+@media (min-width: 535px) and (max-width: 765px) {
+    #crew{
+        background-image: url(assets/crew/background-crew-tablet.jpg);
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+    }
+    .horizontal-line{
+        visibility: hidden;
+    }
+    .horizontal-line-two{
+        visibility: hidden;
+    }
+    .textHorizontalLine{
+       width: 502px !important;
+       margin-left: 11px !important;
+    }
+    .moonDestionation{
+        margin-left: -62px !important;
+        position: static !important;
+    }
+    .icerikler{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .commanderText{
+        margin: 0px !important;
+       }
+    .carousel{
+        margin: 20px !important;
+    }
+    .commanderImg{
+        margin-left: 0px !important;
+    }
+}
+/* Mobile view  */
+@media (min-width: 50px) and (max-width: 535px) {
+    #crew{
+        background-image: url(assets/crew/background-crew-mobile.jpg);
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        overflow-x:hidden ;
+    }
+    .navbar{
+        visibility: hidden;
+    }
+    .horizontal-line{
+        visibility: hidden;
+    }
+    .horizontal-line-two{
+        visibility: hidden;
+    }
+    .hamburger-menu{
+        visibility: visible !important; 
+        margin-left: 167px;
+        margin-top: -116px;
+    } 
+    .sharedLogo{
+        width: 40px;
+        height: 40px;
+    }
+
+    .moonDestionation{
+        font-size: 20px !important;
+        position: relative !important;
+    }
+    .commanderText{
+        margin: 0px !important;
+       }
+    .carousel{
+        margin: 20px !important;
+    }
+ 
+    .icerikler{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .commanderImg{
+        margin-left: 0px !important;
+    }
+}
+/* Finish Crew.html */
 .icerik {
     display: none;
 }
@@ -625,6 +722,6 @@ margin-bottom: 20px;
 .moonText,
 .distance,
 .travel-time,
-.img-moon {
+.img-moon{
     display: none;
 }

@@ -32,7 +32,23 @@ var data = fetch("data.json")
     const moonImg = document.querySelectorAll('.img-moon');
     moonImg.forEach((moonImg, index) => {
       moonImg.src = veri.destinations[index].images.png;
-      console.log(veri.destinations[index].images.png);
+    });
+
+    const commanderTitle = document.querySelectorAll('.commander');
+    commanderTitle.forEach((commanderTitle, index) => {
+      commanderTitle.textContent = veri.crew[index].role;
+    });
+    const commanderName = document.querySelectorAll('.d-hurley');
+    commanderName.forEach((commanderName, index) => {
+      commanderName.textContent = veri.crew[index].name;
+    });
+    const commanderText = document.querySelectorAll('.commanderText');
+    commanderText.forEach((commanderText, index) => {
+      commanderText.textContent = veri.crew[index].bio;
+    });
+    const peopleImg = document.querySelectorAll('.commanderImg2');
+    peopleImg.forEach((peopleImg, index) => {
+      peopleImg.src = veri.crew[index].images.png;
     });
   })
   .catch(error => console.log(error));
@@ -42,7 +58,7 @@ function goster(id) {
   icerikler.forEach(icerik => {
     icerik.style.display = 'none';
   });
-
+  
   const secilenIcerikTitle = document.getElementById(`${id}_title`);
   const secilenIcerikText = document.getElementById(`${id}_text`);
   const secilenIcerikDistance = document.getElementById(`${id}_distance`);
@@ -54,6 +70,4 @@ function goster(id) {
   secilenIcerikDistance.style.display = 'block';
   secilenIcerikTravel.style.display = 'block';
   secilenIcerikImg.style.display = 'block';
-
-
 }

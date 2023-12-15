@@ -50,11 +50,32 @@
         <a class="navbar-brand" style="letter-spacing: 2px;" href="#"><b class="bold-text" style="color: #50525a; font-family: sans-serif;">02</b> &nbsp; &nbsp;MEET YOUR CREW</a>
       </div>
       <div class="commanderInfo">
-        <p class="commander">Commander</p>
-        <h2 class="d-hurley">Douglas Hurley</h2>
-        <p class="commanderText">
-            Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.
-        </p>
+          <div class="icerikler">
+            <div class="step1">
+              <p class="commander"></p>
+              <h2 class="d-hurley"></h2>
+              <p class="commanderText">
+              </p>
+            </div>
+            <div class="step2" style="display: none;">
+              <p class="commander"></p>
+              <h2 class="d-hurley"></h2>
+              <p class="commanderText">
+              </p>
+            </div>
+            <div class="step3" style="display: none;">
+              <p class="commander"></p>
+              <h2 class="d-hurley"></h2>
+              <p class="commanderText">
+              </p>
+            </div>
+            <div class="step4" style="display: none;">
+              <p class="commander"></p>
+              <h2 class="d-hurley"></h2>
+              <p class="commanderText">
+              </p>
+            </div>
+          </div>
       </div>
       <div class="carousel">
         <div class="buttonCarousel active"></div>
@@ -63,21 +84,21 @@
         <div class="buttonCarousel"></div>
       </div>
     </div> 
-
-
-
     <div class="col-md-6">
       <div class="commanderImg col-md-8">
-        <img src="/assets/crew/image-douglas-hurley.png" alt="commander-img" class="commanderImg2">
+        <div class="icerikler">
+          <img src="" alt="commander-img icerik" class="commanderImg2 step1">
+          <img src="" alt="commander-img icerik" class="commanderImg2 step2" style="display: none;">
+          <img src="" alt="commander-img icerik" class="commanderImg2 step3" style="display: none;">
+          <img src="" alt="commander-img icerik" class="commanderImg2 step4" style="display: none;">
+        </div>
       </div>
     </div>
-
   </div>
   <div id="yanMenu" class="sidenav"> 
            <div class="closebtn" onclick="closeNav()">
           <img src="assets/shared/icon-close.svg" alt="close-hamburger-menu">
         </div>
-  
     <a href="#">Anasayfa</a>
     <a href="#">PHP</a>
     <a href="#">HTML</a>
@@ -85,6 +106,18 @@
   </div>  
 </body>
 <script src="function.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+  $(".carousel").on("click", ".buttonCarousel", function() {
+    var index = $(this).index();
+    $(".buttonCarousel").removeClass("active");
+    $(this).addClass("active");
+    $(".step1, .step2, .step3, .step4").hide();
+    $(".step" + (index + 1)).show();
+  });
+});
+</script>
 <script>
 $(function () {
   var button = $(".buttonCarousel");
