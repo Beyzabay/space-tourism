@@ -1,3 +1,4 @@
+/* Start home.html */
 .navbar{
     padding: 0px !important;
 }
@@ -46,11 +47,8 @@ font-family: 'Barlow Condensed', sans-serif;
 .tP{
     margin-top: 10px !important;
     margin-left: 60px !important;
+}
 
-}
-.thin-text{
-    font-weight: 100px !important;
-}
 .explore{
     display: flex;
     justify-content: space-evenly;
@@ -100,9 +98,72 @@ font-family: 'Barlow Condensed', sans-serif;
     color: #D0D6F9;
     letter-spacing: 2px;
 }
+.commander{
+    font-size: 35px;
+    font-family: 'Bellefair', serif;
+    color: #50525a;
+    margin-top: 100px;
+    margin-bottom: 0px;
+}
+.commanderInfo{
+    margin-left:  19% !important;
+}
+.d-hurley{
+    font-size: 56px;
+    color: white;
+    font-family: 'Bellefair', serif;
+}
+.commanderText{
+    color: #D0D6F9;
+    font-size: 20px; 
+    font-family: 'Barlow Condensed', sans-serif;
+    margin-right: 151px;
+}
+.commanderImg{
+    margin-left: 140px;
+    /* margin-bottom: 130px; */
+}
+.commanderImg2{
+    height: 600px;
+}
+.personContent{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-between;
+    align-items: end;
+}
+.crew{
+margin-bottom: 20px;
+}
+  .buttonCarousel {
+    width: 13px;
+    height: 13px;
+    float: left;
+    margin-right: 15px;
+    background-color:#50525a;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s ease width;
+  }
+  
+  .buttonCarousel:last-child {
+    margin-right: 0;
+  }
+  
+  .buttonCarousel.active {
+    cursor: auto;
+    background-color: white;
+  }
+  .carousel{
+    display: flex;
+    justify-content: center;
+    margin-top: 184px;
+  }
+  
 /* Desktop view  */
 @media (min-width: 992px) and (max-width: 1600px) { 
-    body{
+    #index{
         background-image: url(assets/home/background-home-desktop.jpg);
         background-repeat: no-repeat !important;
         background-size: cover !important;
@@ -182,7 +243,7 @@ font-family: 'Barlow Condensed', sans-serif;
         visibility: hidden;
     }
 }
-
+/* Mobile view */
 @media (min-width: 50px) and (max-width: 535px) {
     body{
         background-image: url(assets/home/background-home-mobile.jpg);
@@ -298,4 +359,272 @@ font-family: 'Barlow Condensed', sans-serif;
    .hamburger-menu {
     margin-left: 100px
    }
+}
+/* Finish home.html */
+/* Start destination.html */
+/* Desktop view  */
+@media (min-width: 992px) and (max-width: 1600px) { 
+    #destination{
+        background-image: url(assets/destination/background-destination-desktop.jpg);
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+    }
+    .exploreButon{
+        width: 242px;
+        height: 242px;
+    }    
+    .sidenav{
+        visibility: hidden;
+    }
+}
+.destination-moon{
+    color: white;
+    margin-left: 95px;
+    margin-top: 110px;
+    text-align: center;
+    width: 400px;
+}
+.moonDestionation{
+    margin-left: 19% !important;
+    font-size: 28px;
+
+}
+.bold-text{
+    font-weight: bold;
+}
+.descriptionMoon{
+    margin-left: 140px;
+}
+.moonName{
+    font-size: 90px;
+    color: white;
+    font-family: 'Bellefair', serif;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.moonText-nav{
+    font-size: 20px !important;
+    color: #D0D6F9 !important;
+}
+.moonText{
+    color: #D0D6F9;
+    margin-right: 40px;
+    line-height: 25px;
+}
+.textHorizontalLine{
+    position: static;
+    width: 400px !important;
+    height: 0.1mm;
+    background-color: #97979759;
+    margin-top: 60px;
+}
+.twoBlock{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px !important;
+    padding-right: 64px !important;
+}
+.est-travel-time{
+    font-family: 'Barlow', sans-serif;
+    color: #D0D6F9;
+    font-size: 14px;
+}
+.travel-num{
+    font-family: 'Bellefair', serif;
+    font-size: 24px;
+    color: white;
+}
+@media (min-width: 765px) and (max-width: 992px) { 
+    #destination{
+        background-image: url(assets/destination/background-destination-desktop.jpg);
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+    }
+    .sidenav{
+        visibility: hidden;
+    }
+    .img-moon{
+        width: 380px;
+        height: 380px;
+    }
+    .destination-moon{
+        margin-left: 0px !important;
+    }
+  
+}
+/* Tablet view  */
+@media (min-width: 535px) and (max-width: 765px) {
+    #destination{
+        background-image: url(assets/destination/background-destination-tablet.jpg);
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+    }
+    .horizontal-line{
+        visibility: hidden;
+    }
+    .horizontal-line-two{
+        visibility: hidden;
+    }
+    .destination-moon{
+        margin-bottom: 30px !important;
+        margin-left: 0px !important;
+    }
+    .descriptionMoon{
+        margin-top: 30px !important;
+        margin-left: 0px !important;
+        text-align: center !important;
+
+    }
+    .img-moon{
+        width: 300px !important;
+        height: 300px !important;
+    }
+    .moonText{
+        margin-left: 0px !important;
+        margin-right: -16px !important;
+    }
+    .textHorizontalLine{
+       width: 502px !important;
+       margin-left: 11px !important;
+    }
+    .moon-name{
+        word-spacing: 48px !important;
+    }
+    .moonName{
+        font-size: 80px !important;
+        margin-left: 20px;
+    }
+    .moonDestionation{
+        margin-left: -62px !important;
+        position: static !important;
+    }
+    .icerikler{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+/* Mobile view  */
+@media (min-width: 50px) and (max-width: 535px) {
+    #destination{
+        background-image: url(assets/destination/background-destination-mobile.jpg);
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        overflow-x:hidden ;
+    }
+    .navbar{
+        visibility: hidden;
+    }
+    .horizontal-line{
+        visibility: hidden;
+    }
+    .horizontal-line-two{
+        visibility: hidden;
+    }
+    .hamburger-menu{
+        visibility: visible !important; 
+        margin-left: 167px;
+        margin-top: -116px;
+    } 
+    .sharedLogo{
+        width: 40px;
+        height: 40px;
+    }
+    .img-moon{
+        width: 170px !important;
+        height: 170px !important;
+    }
+    .descriptionMoon{
+    margin-left: 0px !important;
+    margin-top: 20px !important;
+    text-align: center !important;
+
+    }
+    .destination-moon{
+        margin-left: 0px !important;
+        margin-top: 20px !important;
+    }
+    .moonName{
+        display: flex;
+        justify-content: center;
+        font-size: 45px !important;
+    }
+    .moonText{
+        margin-right: 0px !important;
+    }
+    .moonDestionation{
+        font-size: 20px !important;
+        position: relative !important;
+    }
+    .twoBlock{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .icerikler{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+#app {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  width: 180px;
+  height: 20px;
+  margin: 0 auto;
+  transform: translateY(-50%);
+  overflow: hidden;
+  z-index: 1;
+}
+
+.button {
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin-right: 20px;
+  background-color: black;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s ease width;
+}
+
+.button:last-child {
+  margin-right: 0;
+}
+
+.button.active {
+  width: 60px;
+  cursor: auto;
+}
+
+/* Finish Destination.html */
+/* Start Crew.html */
+@media (min-width: 992px) and (max-width: 1600px) { 
+    #crew{
+        background-image: url(assets/crew/background-crew-desktop.jpg);
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+    }
+}
+
+.icerik {
+    display: none;
+}
+#icerik1_title,
+#icerik1_text,
+#icerik1_travel_time,
+#icerik1_distance,
+#icerik1_moon_img{
+    display: block;
+}
+
+.moonName,
+.moonText,
+.distance,
+.travel-time,
+.img-moon {
+    display: none;
 }
