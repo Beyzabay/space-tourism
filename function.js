@@ -50,6 +50,33 @@ var data = fetch("data.json")
     peopleImg.forEach((peopleImg, index) => {
       peopleImg.src = veri.crew[index].images.png;
     });
+    const Tech = document.querySelectorAll('.TechName');
+    Tech.forEach((Tech, index) => {
+      Tech.textContent = veri.technology[index].name;
+    });
+    const TechText = document.querySelectorAll('.TechText');
+    TechText.forEach((TechText, index) => {
+      TechText.textContent = veri.technology[index].description;
+    });
+    // Sayfa duyarliligina göre güncellenen elementler
+    function updateContentBasedOnScreenSize() {
+      const screenSize = window.innerWidth;
+      const TechImg = document.querySelectorAll('.TechImg2');
+    
+      TechImg.forEach((imgElement, index) => {
+        if (screenSize <= 767) {
+          imgElement.src = veri.technology[index].images.landscape
+        } else {
+          imgElement.src = veri.technology[index].images.portrait;
+        }
+      });
+    }
+    // Ekran boyutu değiştiğinde çalışan event dinleyicisi
+    window.addEventListener('resize', updateContentBasedOnScreenSize);
+    
+    // Sayfa ilk yüklendiğinde içeriği ekran boyutuna göre günceller
+    updateContentBasedOnScreenSize();
+
   })
   .catch(error => console.log(error));
 

@@ -135,6 +135,7 @@ font-family: 'Barlow Condensed', sans-serif;
 }
 .crew{
 margin-bottom: 20px;
+/* Crew Carousel */
 }
   .buttonCarousel {
     width: 13px;
@@ -160,6 +161,7 @@ margin-bottom: 20px;
     justify-content: center;
     margin-top: 184px;
   }
+/* Crew Carousel */
   
 /* Desktop view  */
 @media (min-width: 992px) and (max-width: 1600px) { 
@@ -387,7 +389,6 @@ margin-bottom: 20px;
 .moonDestionation{
     margin-left: 19% !important;
     font-size: 28px;
-
 }
 .bold-text{
     font-weight: bold;
@@ -567,19 +568,6 @@ margin-bottom: 20px;
         flex-direction: column;
     }
 }
-#app {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  left: 0;
-  width: 180px;
-  height: 20px;
-  margin: 0 auto;
-  transform: translateY(-50%);
-  overflow: hidden;
-  z-index: 1;
-}
-
 .button {
   width: 20px;
   height: 20px;
@@ -707,6 +695,208 @@ margin-bottom: 20px;
     }
 }
 /* Finish Crew.html */
+/* Start Technology.html */
+.Tech{
+    font-size: 35px;
+    font-family: 'Bellefair', serif;
+    color: #50525a;
+    margin-top: 100px;
+    margin-bottom: 0px;
+}
+.TechInfo{
+    margin-left:  19% !important;
+}
+.TechName{
+    font-size: 56px;
+    color: white;
+    font-family: 'Bellefair', serif;
+}
+.TechText{
+    color: #D0D6F9;
+    font-size: 19px; 
+    font-family: 'Barlow Condensed', sans-serif;
+    margin-right: 85px;
+}
+.TechImg{
+    margin-left: 100px;
+    margin-top:41px;
+    margin-bottom: 50px;
+}
+.TechImg2{
+    width: 450px;
+    height: 450px;
+}
+.spaceLaunch{
+    margin-left: -14% !important;
+    font-size: 28px;
+    margin-bottom: 90px;
+}
+@media (min-width: 992px) and (max-width: 1600px) { 
+    #technology{
+        background-image: url(assets/technology/background-technology-desktop.jpg);
+        background-repeat: repeat !important;
+        background-size: cover !important;
+    }
+    .personContent{
+        margin-right: 0px !important;
+      }
+}
+@media (min-width: 767px) and (max-width: 992px) { 
+    #technology{
+        background-image: url(assets/technology/background-technology-desktop.jpg);
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+    }
+    .sidenav{
+        visibility: hidden;
+    }
+    .personContent{
+        margin: 0px !important;
+      }
+      
+      .TechText{
+        margin-right: 0px !important;
+        width: 420px;
+      }
+      .TechImg2{
+        height: 400px;
+        width: 400px;
+      }
+      .TechImg{
+        margin-left: 170px;
+        margin-bottom: 100px;
+      }
+      .spaceLaunch{
+        margin-bottom: 60px;
+      }
+}
+
+/* Tablet view  */
+@media (min-width: 535px) and (max-width: 767px) {
+    #technology{
+        background-image: url(assets/technology/background-technology-tablet.jpg);
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+    }
+    .horizontal-line{
+        visibility: hidden;
+    }
+    .horizontal-line-two{
+        visibility: hidden;
+    }
+    .textHorizontalLine{
+       width: 502px !important;
+       margin-left: 11px !important;
+    }
+    .moonDestionation{
+        margin-left: -62px !important;
+        position: static !important;
+    }
+    .icerikler{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .commanderText{
+        margin: 0px !important;
+       }
+    .spaceLaunch{
+       font-size: 20px !important;
+       margin-left: 0px !important;
+    }
+    .personContent {
+       display: flex;
+       flex-direction: column-reverse;
+    }
+    .space-l-text{
+        visibility: hidden;
+    }
+    .launch-hide{
+        visibility: visible !important;
+    }
+    .TechImg{
+        margin-left: -10px !important;
+    }
+    .personContent{
+        margin: 0px !important;
+    }
+    .TechImg2{
+        width: 763px !important;
+    }
+ } 
+/* Mobile view  */
+ @media (min-width: 50px) and (max-width: 535px) {
+    #technology{
+        background-image: url(assets/technology/background-technology-mobile.jpg);
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        overflow-x:hidden ;
+    }
+    .navbar{
+        visibility: hidden;
+    }
+    .horizontal-line{
+        visibility: hidden;
+    }
+    .horizontal-line-two{
+        visibility: hidden;
+    }
+    .hamburger-menu{
+        visibility: visible !important; 
+        margin-left: 167px;
+        margin-top: -116px;
+    } 
+    .sharedLogo{
+        width: 40px;
+        height: 40px;
+    }
+    .icerikler{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+} 
+.buttonTech {
+    width: 50px;
+    height: 50px;
+    margin-top: 35px;
+    background-color:transparent;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s ease width;
+    font-size: 19px;
+    font-family: 'Bellefair', serif;
+    color:white;
+    border: 2px solid;
+    border-color: #50525a;
+}
+  
+  .buttonTech:last-child {
+    margin-right: 0;
+  }
+  
+  .buttonTech.active {
+    cursor: auto;
+    background-color: white;
+    color: black;
+  }
+  .carouselTech{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 190px;
+  }
+  .space101{
+    margin-bottom: 150px;
+  }
+  .terminology{
+    color: #D0D6F9;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+    margin: 0px !important;
+  }
+  
+/* Finish Technology.html */
+
 .icerik {
     display: none;
 }

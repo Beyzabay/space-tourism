@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&family=Manrope:wght@800&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Space tourism website</title>
 </head>
-<body id="crew">
+<body id="technology">
 
   <div class="d-flex justify-content-between tP">
     <div class="col-1 shared-logo">
@@ -43,54 +43,49 @@
       </nav>
     </div>
   </div>
-  <div class="container personContent">
-
-    <div class="col-md-6 crew">
-      <div class="moonDestionation position-relative">
-        <a class="navbar-brand" style="letter-spacing: 2px;" href="#"><b class="bold-text" style="color: #50525a; font-family: sans-serif;">02</b> &nbsp; &nbsp;MEET YOUR CREW</a>
+   <div class="container personContent">
+    <div class="carouselTech col-md-1 start-0">
+        <div class="buttonTech active text-center"><p style="margin:10px;">1</p></div>
+        <div class="buttonTech text-center"><p style="margin:10px;">2</p></div>
+        <div class="buttonTech text-center"><p style="margin:10px;">3</p></div>
       </div>
-      <div class="commanderInfo">
+
+    <div class="col-md-6 space101">
+      <div class="spaceLaunch position-relative">
+        <a class="navbar-brand space-l-text" style="letter-spacing: 2px;" href="#"><b class="bold-text" style="color: #50525a; font-family: sans-serif;">03</b> &nbsp; &nbsp;SPACE LAUNCH 101</a>
+      </div>
+      <div class="TechInfo">
           <div class="icerikler">
-            <div class="step1">
-              <p class="commander"></p>
-              <h2 class="d-hurley"></h2>
-              <p class="commanderText">
+            <div class="step1-Tech">
+              <p class="terminology">THE TERMINOLOGY…</p>
+              <h2 class="TechName"></h2>
+              <p class="TechText">
               </p>
             </div>
-            <div class="step2" style="display: none;">
-              <p class="commander"></p>
-              <h2 class="d-hurley"></h2>
-              <p class="commanderText">
+            <div class="step2-Tech" style="display: none;">
+              <p class="Tech"></p>
+              <h2 class="TechName"></h2>
+              <p class="TechText">
               </p>
             </div>
-            <div class="step3" style="display: none;">
-              <p class="commander"></p>
-              <h2 class="d-hurley"></h2>
-              <p class="commanderText">
-              </p>
-            </div>
-            <div class="step4" style="display: none;">
-              <p class="commander"></p>
-              <h2 class="d-hurley"></h2>
-              <p class="commanderText">
+            <div class="step3-Tech" style="display: none;">
+              <p class="Tech"></p>
+              <h2 class="TechName"></h2>
+              <p class="TechText">
               </p>
             </div>
           </div>
       </div>
-      <div class="carousel">
-        <div class="buttonCarousel active"></div>
-        <div class="buttonCarousel"></div>
-        <div class="buttonCarousel"></div>
-        <div class="buttonCarousel"></div>
-      </div>
     </div> 
-    <div class="col-md-6">
-      <div class="commanderImg col-md-8">
+    <div class="col-md-5">
+        <div class="spaceLaunch position-relative">
+            <a class="navbar-brand launch-hide" style="visibility: hidden; letter-spacing: 2px;" href="#"><b class="bold-text" style="color: #50525a; font-family: sans-serif;">03</b> &nbsp; &nbsp;SPACE LAUNCH 101</a>
+          </div>
+      <div class="TechImg">
         <div class="icerikler">
-          <img src="" alt="commander-img" class="commanderImg2 step1">
-          <img src="" alt="commander-img" class="commanderImg2 step2" style="display: none;">
-          <img src="" alt="commander-img" class="commanderImg2 step3" style="display: none;">
-          <img src="" alt="commander-img" class="commanderImg2 step4" style="display: none;">
+          <img src="" alt="tech-img" class="TechImg2 step1-Tech"> 
+          <img src="" alt="tech-img" class="TechImg2 step2-Tech" style="display: none;">
+          <img src="" alt="tech-img" class="TechImg2 step3-Tech" style="display: none;">
         </div>
       </div>
     </div>
@@ -109,25 +104,25 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
 $(document).ready(function() {
-  $(".carousel").on("click", ".buttonCarousel", function() {
+  $(".carouselTech").on("click", ".buttonTech", function() {
     var index = $(this).index();
-    $(".buttonCarousel").removeClass("active");
+    $(".buttonTech").removeClass("active");
     $(this).addClass("active");
-    $(".step1, .step2, .step3, .step4").hide();
-    $(".step" + (index + 1)).show();
+    $(".step1-Tech, .step2-Tech, .step3-Tech").hide();
+    $(".step" + (index + 1) + "-Tech").show();
   });
 });
 </script>
 <script>
 $(function () {
-  var button = $(".buttonCarousel");
+  var button = $(".buttonTech");
 
   function switchToNext() {
     var _this = $(this);
 
     if (_this.hasClass("active")) return false;
     else {
-      $(".buttonCarousel.active").removeClass("active");
+      $(".buttonTech.active").removeClass("active");
       _this.addClass("active");
     }
   }
