@@ -43,12 +43,10 @@ font-family: 'Barlow Condensed', sans-serif;
 .nBar{
     padding: 0px !important;
 }
-
 .tP{
     margin-top: 10px !important;
     margin-left: 60px !important;
 }
-
 .explore{
     display: flex;
     justify-content: space-evenly;
@@ -70,14 +68,12 @@ font-family: 'Barlow Condensed', sans-serif;
     align-items: end;
     margin-bottom:50px ;
 }
-
 .space{
     color: white;
     margin-left: 55px;
     margin-top: 176px;
     text-align: center;
     width: 400px;
-
 }
 .p1{
     font-size: 28px; 
@@ -121,12 +117,15 @@ font-family: 'Barlow Condensed', sans-serif;
 }
 .commanderImg{
     margin-left: 40px;
-    /* margin-bottom: 130px; */
-}
-.commanderImg2{
-    height: 600px;
 }
 .personContent{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-between;
+    align-items: end;
+}
+.peopleContent{
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
@@ -147,11 +146,9 @@ margin-bottom: 20px;
     cursor: pointer;
     transition: 0.3s ease width;
   }
-  
   .buttonCarousel:last-child {
     margin-right: 0;
-  }
-  
+  }  
   .buttonCarousel.active {
     cursor: auto;
     background-color: white;
@@ -201,7 +198,6 @@ margin-bottom: 20px;
     .sidenav{
         visibility: hidden;
     }
-  
 }
 
 /* Tablet view */
@@ -224,7 +220,6 @@ margin-bottom: 20px;
         width: 242px;
         height: 242px;
     } 
-   
     .explore{
         margin-top: 162px !important;
         margin-right: 0px !important;
@@ -237,12 +232,18 @@ margin-bottom: 20px;
         align-content: center;
         flex-wrap: wrap;
     }
- 
     .p1{
         font-size: 20px; 
     }
     .sidenav{
         visibility: hidden;
+    }
+    .peopleContent{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: space-between;
+        align-items: end;
     }
 }
 /* Mobile view */
@@ -268,12 +269,12 @@ margin-bottom: 20px;
     }
     .tP{
         margin-top: 0px !important;
+        margin-left: 10px !important;
     }
     .exploreButon{
         width: 150px;
         height: 150px;
-    } 
-   
+    }
     .explore{
         margin-top: 162px !important;
         margin-right: 0px !important;
@@ -305,15 +306,6 @@ margin-bottom: 20px;
         color: #D0D6F9;
         letter-spacing: 2px;
     }
-    .hamburger-menu{
-        visibility: visible !important; 
-        margin-left: 167px;
-        margin-top: -116px;
-    } 
-    .sharedLogo{
-        width: 40px;
-        height: 40px;
-    }
 }
 
 /* Sidenav Menu */
@@ -334,7 +326,6 @@ margin-bottom: 20px;
     backdrop-filter: blur(8px); 
     background-color: hsla(0, 0%, 100%, 0.04); 
   }
-  
   .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -343,7 +334,6 @@ margin-bottom: 20px;
     display: block;
     transition: 0.3s;
   }
-  
   .sidenav a:hover {
     color: #f1f1f1; 
   }  
@@ -357,9 +347,6 @@ margin-bottom: 20px;
   @media (min-width: 50px) and (max-width: 400px) {
    .space{
     width: 313px;
-   }
-   .hamburger-menu {
-    margin-left: 100px
    }
 }
 /* Finish home.html */
@@ -451,7 +438,6 @@ margin-bottom: 20px;
     .destination-moon{
         margin-left: 0px !important;
     }
-  
 }
 /* Tablet view  */
 @media (min-width: 535px) and (max-width: 765px) {
@@ -459,12 +445,6 @@ margin-bottom: 20px;
         background-image: url(assets/destination/background-destination-tablet.jpg);
         background-repeat: no-repeat !important;
         background-size: cover !important;
-    }
-    .horizontal-line{
-        visibility: hidden;
-    }
-    .horizontal-line-two{
-        visibility: hidden;
     }
     .destination-moon{
         margin-bottom: 30px !important;
@@ -474,7 +454,6 @@ margin-bottom: 20px;
         margin-top: 30px !important;
         margin-left: 0px !important;
         text-align: center !important;
-
     }
     .img-moon{
         width: 300px !important;
@@ -513,33 +492,14 @@ margin-bottom: 20px;
         background-size: cover !important;
         overflow-x:hidden ;
     }
-    .navbar{
-        visibility: hidden;
-    }
-    .horizontal-line{
-        visibility: hidden;
-    }
-    .horizontal-line-two{
-        visibility: hidden;
-    }
-    .hamburger-menu{
-        visibility: visible !important; 
-        margin-left: 167px;
-        margin-top: -116px;
-    } 
-    .sharedLogo{
-        width: 40px;
-        height: 40px;
-    }
     .img-moon{
         width: 170px !important;
         height: 170px !important;
     }
     .descriptionMoon{
-    margin-left: 0px !important;
-    margin-top: 20px !important;
-    text-align: center !important;
-
+        margin-left: 0px !important;
+        margin-top: 20px !important;
+        text-align: center !important;
     }
     .destination-moon{
         margin-left: 0px !important;
@@ -551,7 +511,8 @@ margin-bottom: 20px;
         font-size: 45px !important;
     }
     .moonText{
-        margin-right: 0px !important;
+        margin-right: 48px !important;
+        margin-left: 72px;
     }
     .moonDestionation{
         font-size: 20px !important;
@@ -567,26 +528,30 @@ margin-bottom: 20px;
         align-items: center;
         flex-direction: column;
     }
+    .commanderImg2{
+        max-width: 100%;
+        height: auto;
+    }
 }
-.button {
-  width: 20px;
-  height: 20px;
-  float: left;
-  margin-right: 20px;
-  background-color: black;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: 0.3s ease width;
-}
+    .button {
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-right: 20px;
+    background-color: black;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s ease width;
+    }
 
-.button:last-child {
-  margin-right: 0;
-}
+    .button:last-child {
+    margin-right: 0;
+    }
 
-.button.active {
-  width: 60px;
-  cursor: auto;
-}
+    .button.active {
+    width: 60px;
+    cursor: auto;
+    }
 
 /* Finish Destination.html */
 /* Start Crew.html */
@@ -610,7 +575,6 @@ margin-bottom: 20px;
     margin: 0px !important;
    }
 }
-
 /* Tablet view  */
 @media (min-width: 535px) and (max-width: 765px) {
     #crew{
@@ -618,33 +582,39 @@ margin-bottom: 20px;
         background-repeat: no-repeat !important;
         background-size: cover !important;
     }
-    .horizontal-line{
-        visibility: hidden;
+    .crew{
+        margin-top: -217px !important;
+        text-align: center!important;
     }
-    .horizontal-line-two{
-        visibility: hidden;
+    .moonDestionation{
+        text-align: center!important;
+        margin-bottom: 20px;
+    }
+    .buttonCarousel{
+        margin-right: 25px;
     }
     .textHorizontalLine{
        width: 502px !important;
        margin-left: 11px !important;
     }
-    .moonDestionation{
-        margin-left: -62px !important;
-        position: static !important;
-    }
-    .icerikler{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
     .commanderText{
         margin: 0px !important;
        }
-    .carousel{
-        margin: 20px !important;
+
+    .commanderInfo{
+        margin-left: 0px !important;
     }
     .commanderImg{
         margin-left: 0px !important;
+    }
+    .carousel{
+        bottom: 130px;
+    }
+    .peopleContent{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column-reverse;
+        align-items: flex-start;
     }
 }
 /* Mobile view  */
@@ -655,43 +625,48 @@ margin-bottom: 20px;
         background-size: cover !important;
         overflow-x:hidden ;
     }
-    .navbar{
-        visibility: hidden;
-    }
-    .horizontal-line{
-        visibility: hidden;
-    }
-    .horizontal-line-two{
-        visibility: hidden;
-    }
-    .hamburger-menu{
-        visibility: visible !important; 
-        margin-left: 167px;
-        margin-top: -116px;
-    } 
-    .sharedLogo{
-        width: 40px;
-        height: 40px;
+    .commanderText{
+        margin-right: 0px !important;  
     }
 
-    .moonDestionation{
-        font-size: 20px !important;
-        position: relative !important;
+    .commanderInfo{
+        margin-left: 0px !important;
     }
-    .commanderText{
-        margin: 0px !important;
-       }
-    .carousel{
-        margin: 20px !important;
-    }
- 
-    .icerikler{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
+    .commander{
+        margin-top: 60px;
     }
     .commanderImg{
         margin-left: 0px !important;
+    }
+    .crew{
+        margin-top: -169px !important;
+        text-align: center!important;
+        margin-left: 0px;
+    }
+    .moonDestionation{
+        margin: 0px;
+    }
+    .buttonCarousel{
+        margin-right: 25px;
+    }
+    .d-hurley{
+        font-size: 48px;
+        margin-left: 0px;
+    }
+    .icerikler{
+        margin-right: -15px;
+    }
+    .peopleContent{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+    .carousel{
+        bottom: 130px;
+    }
+    .launch-hide{
+        visibility: visible !important;
     }
 }
 /* Finish Crew.html */
@@ -719,7 +694,7 @@ margin-bottom: 20px;
 }
 .TechImg{
     margin-left: 100px;
-    margin-top:41px;
+    margin-top:-95px;
     margin-bottom: 50px;
 }
 .TechImg2{
@@ -731,6 +706,7 @@ margin-bottom: 20px;
     font-size: 28px;
     margin-bottom: 90px;
 }
+/* Start technology.html */
 @media (min-width: 992px) and (max-width: 1600px) { 
     #technology{
         background-image: url(assets/technology/background-technology-desktop.jpg);
@@ -778,16 +754,6 @@ margin-bottom: 20px;
         background-repeat: no-repeat !important;
         background-size: cover !important;
     }
-    .horizontal-line{
-        visibility: hidden;
-    }
-    .horizontal-line-two{
-        visibility: hidden;
-    }
-    .textHorizontalLine{
-       width: 502px !important;
-       margin-left: 11px !important;
-    }
     .moonDestionation{
         margin-left: -62px !important;
         position: static !important;
@@ -797,9 +763,6 @@ margin-bottom: 20px;
         align-items: center;
         flex-direction: column;
     }
-    .commanderText{
-        margin: 0px !important;
-       }
     .spaceLaunch{
        font-size: 20px !important;
        margin-left: 0px !important;
@@ -816,6 +779,7 @@ margin-bottom: 20px;
     }
     .TechImg{
         margin-left: -10px !important;
+        margin-top: 50px !important;
     }
     .personContent{
         margin: 0px !important;
@@ -823,23 +787,31 @@ margin-bottom: 20px;
     .TechImg2{
         width: 763px !important;
     }
+    .TechInfo {
+        margin-left: -92px !important;
+    }
+    .spaceLaunch{
+        text-align: center!important;
+        margin-bottom: 0px !important;
+    }
+    .carouselTech{
+        display: flex !important;
+        flex-direction: row !important;
+        position:absolute;
+        margin-bottom: 433px !important;
+        margin-left: 198px !important;
+    }
+    .buttonTech{
+        margin-left: 53px !important;
+    }
  } 
 /* Mobile view  */
- @media (min-width: 50px) and (max-width: 535px) {
+ @media (min-width: 368px) and (max-width: 535px) {
     #technology{
         background-image: url(assets/technology/background-technology-mobile.jpg);
         background-repeat: no-repeat !important;
         background-size: cover !important;
         overflow-x:hidden ;
-    }
-    .navbar{
-        visibility: hidden;
-    }
-    .horizontal-line{
-        visibility: hidden;
-    }
-    .horizontal-line-two{
-        visibility: hidden;
     }
     .hamburger-menu{
         visibility: visible !important; 
@@ -855,7 +827,134 @@ margin-bottom: 20px;
         align-items: center;
         flex-direction: column;
     }
+    .spaceLaunch{
+       font-size: 20px !important;
+       margin-left: 0px !important;
+    }
+    .personContent {
+       display: flex;
+       flex-direction: column-reverse;
+    }
+    .space-l-text{
+        visibility: hidden;
+    }
+    .launch-hide{
+        visibility: visible !important;
+    }
+    .TechImg{
+        margin-left: -10px !important;
+        margin-top: 50px !important;
+    }
+    .personContent{
+        margin: 0px !important;
+    }
+    .TechImg2{
+        width: 390px !important;
+        height: 390px !important;
+    }
+    .TechInfo {
+        margin-left: 0px !important;
+    }
+    .spaceLaunch{
+        text-align: center!important;
+        margin-bottom: 0px !important;
+    }
+    .carouselTech{
+        display: flex !important;
+        flex-direction: row !important;
+        position:absolute;
+        margin-left: 0px !important;
+        top: 610px !important;
+    }
+    .buttonTech{
+        margin-left: 53px !important;
+    }
+    .TechName{
+        font-size: 48px !important;
+    }
+    .TechText{
+        margin-right: 50px !important;
+    }
+    .space101{
+        margin-bottom: 0px !important;
+        margin-left: -10px !important;
+      }
 } 
+@media (min-width: 50px) and (max-width: 368px) {
+    #technology{
+        background-image: url(assets/technology/background-technology-mobile.jpg);
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        overflow-x:hidden ;
+    }
+    .hamburger-menu{
+        visibility: visible !important; 
+        margin-left: 97px;
+        margin-top: -116px;
+    } 
+    .sharedLogo{
+        width: 40px;
+        height: 40px;
+    } 
+    .icerikler{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .spaceLaunch{
+       font-size: 20px !important;
+       margin-left: 0px !important;
+    }
+    .personContent {
+       display: flex;
+       flex-direction: column-reverse;
+    }
+    .space-l-text{
+        visibility: hidden;
+    }
+    .launch-hide{
+        visibility: visible !important;
+    }
+    .TechImg{
+        margin-left: -10px !important;
+        margin-top: 50px !important;
+    }
+    .TechName{
+        font-size: 48px !important;
+    }
+    .personContent{
+        margin: 0px !important;
+    }
+    .TechImg2{
+        width: 390px !important;
+        height: 390px !important;
+    }
+    .TechInfo {
+        margin-left: 0px !important;
+    }
+    .spaceLaunch{
+        text-align: center!important;
+        margin-bottom: 0px !important;
+    }
+    .carouselTech{
+        display: flex !important;
+        flex-direction: row !important;
+        position:absolute;
+        margin-left: 0px !important;
+        top: 610px !important;
+    }
+    .buttonTech{
+        margin-left: 53px !important;
+    }
+    .TechText{
+        margin-right: 80px !important; 
+    }
+    .space101{
+        margin-bottom: 0px !important;
+        margin-left: -56px !important;
+      }
+}
 .buttonTech {
     width: 50px;
     height: 50px;
@@ -870,7 +969,6 @@ margin-bottom: 20px;
     border: 2px solid;
     border-color: #50525a;
 }
-  
   .buttonTech:last-child {
     margin-right: 0;
   }
