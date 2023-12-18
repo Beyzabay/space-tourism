@@ -99,5 +99,8 @@ function goster(id) {
   secilenIcerikImg.style.display = 'block';
 }
 document.addEventListener('touchmove', function(event) {
-  event.preventDefault();
+  if (event.touches.length > 1) {
+    event.preventDefault();
+  }
 }, { passive: false });
+
