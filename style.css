@@ -132,10 +132,10 @@ font-family: 'Barlow Condensed', sans-serif;
     justify-content: space-between;
     align-items: end;
 }
-.crew{
+/* .crew{
 margin-bottom: 20px;
+} */
 /* Crew Carousel */
-}
   .buttonCarousel {
     width: 13px;
     height: 13px;
@@ -561,6 +561,9 @@ margin-bottom: 20px;
         background-repeat: no-repeat !important;
         background-size: cover !important;
     }
+    .crew{
+        margin-bottom: 258px !important;
+       }
 }
 @media (min-width: 765px) and (max-width: 992px) { 
     #crew{
