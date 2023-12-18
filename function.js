@@ -58,6 +58,7 @@ var data = fetch("data.json")
     TechText.forEach((TechText, index) => {
       TechText.textContent = veri.technology[index].description;
     });
+    
     // Sayfa duyarliligina göre güncellenen elementler
     function updateContentBasedOnScreenSize() {
       const screenSize = window.innerWidth;
