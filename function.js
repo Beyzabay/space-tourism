@@ -98,3 +98,6 @@ function goster(id) {
   secilenIcerikTravel.style.display = 'block';
   secilenIcerikImg.style.display = 'block';
 }
+document.addEventListener('touchmove', function(event) {
+  event.preventDefault();
+}, { passive: false });

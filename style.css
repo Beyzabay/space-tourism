@@ -560,7 +560,6 @@ margin-bottom: 20px;
         background-image: url(assets/crew/background-crew-desktop.jpg);
         background-repeat: no-repeat !important;
         background-size: cover !important;
-        overflow-x: hidden;
     }
     .crew{
         margin-bottom: 258px !important;
@@ -717,7 +716,6 @@ margin-bottom: 20px;
         background-image: url(assets/technology/background-technology-desktop.jpg);
         background-repeat: repeat !important;
         background-size: cover !important;
-        overflow-x: hidden;
     }
     .personContent{
         margin-right: 0px !important;
@@ -759,7 +757,6 @@ margin-bottom: 20px;
         background-image: url(assets/technology/background-technology-tablet.jpg);
         background-repeat: no-repeat !important;
         background-size: cover !important;
-        overflow-x: hidden;
     }
     .moonDestionation{
         margin-left: -62px !important;
@@ -818,7 +815,6 @@ margin-bottom: 20px;
         background-image: url(assets/technology/background-technology-mobile.jpg);
         background-repeat: no-repeat !important;
         background-size: cover !important;
-        overflow-x:hidden;
     }
     .hamburger-menu{
         visibility: visible !important; 
