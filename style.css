@@ -1,4 +1,4 @@
-/* Start home.html */
+/* Start index.html */
 .navbar{
     padding: 0px !important;
 }
@@ -349,7 +349,7 @@ margin-bottom: 20px;
     width: 313px;
    }
 }
-/* Finish home.html */
+/* Finish index.html */
 /* Start destination.html */
 /* Desktop view  */
 @media (min-width: 992px) and (max-width: 1600px) { 
