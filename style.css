@@ -257,8 +257,15 @@ margin-bottom: 20px;
     .navbar{
         visibility: hidden;
     }
+    .navbar-brand{
+        margin: 0px !important;
+        padding: 0px !important;
+        width: 0px !important;
+        
+    }
     .horizontal-line{
         visibility: hidden;
+        width: 0px !important;
     }
     .horizontal-line-two{
         visibility: hidden;
