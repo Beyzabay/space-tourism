@@ -629,6 +629,9 @@ margin-bottom: 20px;
         background-size: cover !important;
         overflow-x:hidden;
     }
+    .body{
+        overflow-x: hidden !important;
+    }
     .commanderText{
         margin-right: 0px !important;  
     }
