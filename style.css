@@ -664,9 +664,9 @@ margin-bottom: 20px;
         font-size: 48px;
         margin-left: 0px;
     }
-    .icerikler{
+    /* .icerikler{
         margin-right: -15px;
-    }
+    } */
     .peopleContent{
         display: flex;
         flex-wrap: nowrap;
@@ -832,14 +832,12 @@ margin-bottom: 20px;
         width: 40px;
         height: 40px;
     }
-    .icerikler{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
     .spaceLaunch{
        font-size: 20px !important;
        margin-left: 0px !important;
+       text-align: center!important;
+       margin-bottom: 0px !important;
+       right: 50px;
     }
     .personContent {
        display: flex;
@@ -852,22 +850,18 @@ margin-bottom: 20px;
         visibility: visible !important;
     }
     .TechImg{
-        margin-left: -10px !important;
+        margin-left: 0px !important;
         margin-top: 50px !important;
     }
     .personContent{
         margin: 0px !important;
     }
     .TechImg2{
-        width: 390px !important;
+        width: 489px !important;
         height: 390px !important;
     }
     .TechInfo {
         margin-left: 0px !important;
-    }
-    .spaceLaunch{
-        text-align: center!important;
-        margin-bottom: 0px !important;
     }
     .carouselTech{
         display: flex !important;
@@ -883,7 +877,8 @@ margin-bottom: 20px;
         font-size: 48px !important;
     }
     .TechText{
-        margin-right: 50px !important;
+        margin-right: 80px !important;
+        width: 400px;
     }
     .space101{
         margin-bottom: 0px !important;
@@ -899,7 +894,7 @@ margin-bottom: 20px;
     }
     .hamburger-menu{
         visibility: visible !important; 
-        margin-left: 97px;
+        margin-left: 140px;
         margin-top: -116px;
     } 
     .sharedLogo{
@@ -915,6 +910,7 @@ margin-bottom: 20px;
     .spaceLaunch{
        font-size: 20px !important;
        margin-left: 0px !important;
+       margin-bottom: 0px !important;
     }
     .personContent {
        display: flex;
@@ -942,10 +938,6 @@ margin-bottom: 20px;
     }
     .TechInfo {
         margin-left: 0px !important;
-    }
-    .spaceLaunch{
-        text-align: center!important;
-        margin-bottom: 0px !important;
     }
     .carouselTech{
         display: flex !important;
